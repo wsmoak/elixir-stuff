@@ -7,7 +7,7 @@ defmodule Chop do
   end
 
   # Base case.  The guess is correct and we terminate.
-  def _guess( actual, _, current_guess ) when actual == current_guess do
+   def _guess( actual, _, current_guess = actual ) do
     IO.puts current_guess
   end
 
